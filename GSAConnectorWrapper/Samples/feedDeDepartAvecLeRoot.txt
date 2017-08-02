@@ -1,0 +1,31 @@
+POST with the url :/xmlfeed
+--<<
+Content-Disposition: form-data; name="datasource"
+Content-Type: text/plain
+
+adaptor_vm-dev-gsa-connector-dev-coveo-com_5678
+--<<
+Content-Disposition: form-data; name="feedtype"
+Content-Type: text/plain
+
+metadata-and-url
+--<<
+Content-Disposition: form-data; name="data"
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsafeed PUBLIC "-//Google//DTD GSA Feeds//EN" "">
+<gsafeed>
+<!--Product Version: Google Adaptor for SharePoint  v4.1.1,  Google Inc.-->
+<!--Product Version: Google Adaptor Library  v4.1.1,  Google Inc.-->
+<!--Version 1.8.0_121 of Java is supported.-->
+<header>
+<datasource>adaptor_vm-dev-gsa-connector-dev-coveo-com_5678</datasource>
+<feedtype>metadata-and-url</feedtype>
+</header>
+<group>
+<record mimetype="text/plain" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/"/>
+</group>
+</gsafeed>
+
+--<<--

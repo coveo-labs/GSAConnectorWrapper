@@ -1,0 +1,15 @@
+﻿{
+  "PLATFORM_API_ENDPOINT": "https://platformdev.cloud.coveo.com",
+  "PUSH_API_ENDPOINT": "https://pushdev.cloud.coveo.com",
+  //"LISTENING_URL_FEED":  "http://localhost:19900/xmlfeed/",//Default value:"http://localhost:19900/xmlfeed/"
+  //"LISTENING_URL_GROUPS": "http://localhost:19900/xmlgroups/",//Default value:"http://localhost:19900/xmlgroups/"
+  //"GSA_AUTH_URL": "http://localhost:8000/accounts/ClientLogin/",//Default value:"http://localhost:8000/accounts/ClientLogin/"
+  "ORGANIZATION_ID": "connectorsteamtests", //qa:"lagrosseconnecteur"
+  "PROVIDER_ID": "GSAManualTestingProvider",
+  "API_KEY": "xx5309342b-5c8b-4049-a91a-b4076ee9a7d0", //qa:"xx9203c4e6-f78d-4a70-87f8-23565f858ea1"
+  "PUSH_SOURCE_DICTIONNARY": {"adaptor_vm-dev-gsa-connector-dev-coveo-com_5678": "connectorsteamtests-ukhxxb34p4uj5f6jougxas2bue" },
+  "PUSH_SOURCE_ID": "connectorsteamtests-vzisyol4665n7w6hamoq6uclaa" //,//qa:"lagrosseconnecteur-wblbgybc2tzeajnksmcyzfkkda"
+  //"DELETE_ON_INVALID_URL": true, //Determine if try to delete the document related to the URLs that do not give a code 200/ok.
+  //"REQUIRE_DISPLAY_URL": false, //This mainly target the root elements of the connectors that does not have a display URL.
+  //"PUSH_RECORDS_WITHOUT_ACL": false //This allow you to push documents without permissions(Allow everyone).
+}

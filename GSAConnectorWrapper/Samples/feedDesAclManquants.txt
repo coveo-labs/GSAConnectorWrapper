@@ -1,0 +1,38 @@
+POST with the url :/xmlfeed
+--<<
+Content-Disposition: form-data; name="datasource"
+Content-Type: text/plain
+
+adaptor_vm-dev-gsa-connector-dev-coveo-com_5678
+--<<
+Content-Disposition: form-data; name="feedtype"
+Content-Type: text/plain
+
+metadata-and-url
+--<<
+Content-Disposition: form-data; name="data"
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsafeed PUBLIC "-//Google//DTD GSA Feeds//EN" "">
+<gsafeed>
+<!--Product Version: Google Adaptor for SharePoint  v4.1.1,  Google Inc.-->
+<!--Product Version: Google Adaptor Library  v4.1.1,  Google Inc.-->
+<!--Version 1.8.0_121 of Java is supported.-->
+<header>
+<datasource>adaptor_vm-dev-gsa-connector-dev-coveo-com_5678</datasource>
+<feedtype>metadata-and-url</feedtype>
+</header>
+<group>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817?admin">
+<principal access="permit" case-sensitivity-type="everything-case-insensitive" scope="user">devcoveo\devuser1</principal>
+</acl>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817/Shared%20Documents"/>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817/FormServerTemplates"/>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817/Lists/PublishedFeed"/>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817/SiteAssets"/>
+<acl inherit-from="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817" inheritance-type="parent-overrides" url="http://vm-dev-gsa-connector.dev.coveo.com:5678/doc/http://vm-dev-sp2013:20817/SitePages"/>
+</group>
+</gsafeed>
+
+--<<--

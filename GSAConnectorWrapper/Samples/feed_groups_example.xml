@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE gsafeed PUBLIC "-//Google//DTD GSA Feeds//EN" "">
+<xmlgroups>
+  <membership>
+    <principal namespace="Default" 
+      case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" scope="GROUP">
+        abc.com/group1
+    </principal>
+    <members>
+      <principal namespace="Default" 
+        case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" scope="GROUP">
+          subgroup1
+      </principal>
+      <principal namespace="Default" 
+        case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" scope="USER">
+          user1
+      </principal>
+    </members>
+  </membership>
+  <membership>
+    <principal namespace="Default" 
+      case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" scope="GROUP">
+        subgroup1
+    </principal>
+    <members>
+      <principal namespace="Default" 
+        case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" scope="USER">
+          example.com/user2
+      </principal>
+    </members>
+  </membership>
+</xmlgroups>

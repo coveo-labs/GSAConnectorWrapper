@@ -1,0 +1,40 @@
+POST with the url :/xmlgroups
+--<<
+Content-Disposition: form-data; name="groupsource"
+Content-Type: text/plain
+
+adaptor_vm-dev-gsa-connector-dev-coveo-com_5678
+--<<
+Content-Disposition: form-data; name="data"
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE xmlgroups PUBLIC "-//Google//DTD GSA Feeds//EN" "">
+<xmlgroups>
+<!--Product Version: Google Adaptor for SharePoint  v4.1.1,  Google Inc.-->
+<!--Product Version: Google Adaptor Library  v4.1.1,  Google Inc.-->
+<!--Version 1.8.0_121 of Java is supported.-->
+<membership>
+<principal namespace="Default_http://vm-dev-sp2013:20817" scope="GROUP">mycollection Members</principal>
+<members>
+<principal case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" namespace="Default" scope="USER">coveo\dshelgunov</principal>
+<principal case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" namespace="Default" scope="USER">devcoveo\devuser2k10_1</principal>
+</members>
+</membership>
+<membership>
+<principal namespace="Default_http://vm-dev-sp2013:20817" scope="GROUP">mycollection Owners</principal>
+<members>
+<principal case-sensitivity-type="EVERYTHING_CASE_INSENSITIVE" namespace="Default" scope="USER">devcoveo\devuser1</principal>
+</members>
+</membership>
+<membership>
+<principal namespace="Default_http://vm-dev-sp2013:20817" scope="GROUP">Excel Services Viewers</principal>
+<members/>
+</membership>
+<membership>
+<principal namespace="Default_http://vm-dev-sp2013:20817" scope="GROUP">mycollection Visitors</principal>
+<members/>
+</membership>
+</xmlgroups>
+
+--<<--

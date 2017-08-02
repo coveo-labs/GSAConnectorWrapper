@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT xmlgroups (membership+)>
+<!ELEMENT membership (principal, members)>
+<!ELEMENT members (principal+)>
+<!ELEMENT principal (#PCDATA)>
+
+<!ATTLIST principal
+  scope (USER|GROUP) #REQUIRED
+  namespace CDATA "Default"
+  case-sensitivity-type (EVERYTHING_CASE_SENSITIVE|EVERYTHING_CASE_INSENSITIVE) 
+    "EVERYTHING_CASE_SENSITIVE"
+  principal-type (unqualified) #IMPLIED>
